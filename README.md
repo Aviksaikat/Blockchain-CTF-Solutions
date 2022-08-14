@@ -11,5 +11,7 @@
 
 ### Ethernaut
 
-| Fallback | [Writeup](./ethernaut\fallback) |
+#### Solutions are all in brownie
+
+| Fallback | [Writeup](./ethernaut/fallback) |
 |---|---|
