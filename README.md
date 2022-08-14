@@ -1,6 +1,15 @@
 # Blockchain-CTF-Solutions
-## Kind of writeups for web3 CTFs &amp; challenges 
 
+> Saikat Karmakar | 2022
 
+----------------------------------------------------------------
 
-##### I'll try to explain the solutions soon.
+## Table of contents
+
+1. [Ethernaut](https://ethernaut.openzeppelin.com/)
+2. [Capturetheether](https://capturetheether.com/) // idk broken or something
+
+### Ethernaut
+
+| Fallback | [Writeup](./ethernaut\fallback) |
+|---|---|
