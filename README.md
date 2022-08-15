@@ -15,4 +15,3 @@
 
 | Fallback | [Writeup](./ethernaut/fallback) |
 |---|---|
-
