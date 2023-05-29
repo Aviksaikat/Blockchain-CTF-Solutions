@@ -1,0 +1,78 @@
+{
+	"compiler": {
+		"version": "0.6.12+commit.27d51765"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "bytes8",
+						"name": "_gateKey",
+						"type": "bytes8"
+					}
+				],
+				"name": "enter",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "entrant",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practice/web3/CTFS/ethernaut/GatekeeperTwo/contracts/GatekeeperTwo.sol": "GatekeeperTwo"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practice/web3/CTFS/ethernaut/GatekeeperTwo/contracts/GatekeeperTwo.sol": {
+			"keccak256": "0xf3d0f0add933fce084be65de3e3f2d809ddd0e0380fa6a688e7e2b8b522acc99",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://99a046d2959f969d0d16bf4b802845f8e5f4b22a934320e239d6f86f6d84355d",
+				"dweb:/ipfs/QmPB5yoc4i5Kf5x8JnL8CocxUrqQ85e9NZfXCYbSEAoG4D"
+			]
+		}
+	},
+	"version": 1
+}

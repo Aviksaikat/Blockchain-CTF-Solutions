@@ -1,0 +1,138 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "value",
+						"type": "uint256"
+					}
+				],
+				"name": "foundValue",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "breakIn",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "key",
+				"outputs": [
+					{
+						"internalType": "bytes8",
+						"name": "",
+						"type": "bytes8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "owner",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "target",
+				"outputs": [
+					{
+						"internalType": "contract GatekeeperOne",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "txOrigin16",
+				"outputs": [
+					{
+						"internalType": "bytes8",
+						"name": "",
+						"type": "bytes8"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practice/web3/CTFS/ethernaut/GatekeeperOne/contracts/KeyAttacker.sol": "KeyAttacker"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"@openzeppelin/contracts/math/SafeMath.sol": {
+			"keccak256": "0xcc78a17dd88fa5a2edc60c8489e2f405c0913b377216a5b26b35656b2d0dab52",
+			"urls": [
+				"bzz-raw://526dc85e1f9b9b45830e202568d267d93dde7a4fcccf4ad7798dadcd92304d3c",
+				"dweb:/ipfs/QmaoXMB972J3cSDLtBq3xBo4jLwqD2uzXTwujtSPqkYVhR"
+			]
+		},
+		"practice/web3/CTFS/ethernaut/GatekeeperOne/contracts/GatekeeperOne.sol": {
+			"keccak256": "0x70b460eb347ae0d541ac683e9ee439ad276ecad73c0c95b78c9275bc13ab4263",
+			"urls": [
+				"bzz-raw://a73dfa6cde599cd001d201e6829a500bb218748e05e179008fe928e45bb1c0c8",
+				"dweb:/ipfs/QmRiZMqfLd6gjvaoAvEvAciz28pL1b145bhXr9pb7ELC5i"
+			]
+		},
+		"practice/web3/CTFS/ethernaut/GatekeeperOne/contracts/KeyAttacker.sol": {
+			"keccak256": "0x3066dd663a24aa0b7de1f4642fed07aefa2297a1797e266c6101b02b27645655",
+			"urls": [
+				"bzz-raw://f867a55c7a663e90007e8b21c2fe4d3494dcde9344f2fb0df630b3d885515ee9",
+				"dweb:/ipfs/QmNZdW5SYkwbDWkwX5vbEpBvHMupMb7zZWMaiH1Yk8n83A"
+			]
+		}
+	},
+	"version": 1
+}

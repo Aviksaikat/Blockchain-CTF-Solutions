@@ -1,0 +1,72 @@
+{
+	"compiler": {
+		"version": "0.6.6+commit.6c089d02"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_address",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
+				"inputs": [],
+				"name": "result",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"practice/web3/CTFS/ethernaut/GatekeeperTwo/contracts/GatekeeperTwoAttack.sol": "GatekeeperTwoAttack"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"practice/web3/CTFS/ethernaut/GatekeeperTwo/contracts/GatekeeperTwo.sol": {
+			"keccak256": "0xf3d0f0add933fce084be65de3e3f2d809ddd0e0380fa6a688e7e2b8b522acc99",
+			"urls": [
+				"bzz-raw://99a046d2959f969d0d16bf4b802845f8e5f4b22a934320e239d6f86f6d84355d",
+				"dweb:/ipfs/QmPB5yoc4i5Kf5x8JnL8CocxUrqQ85e9NZfXCYbSEAoG4D"
+			]
+		},
+		"practice/web3/CTFS/ethernaut/GatekeeperTwo/contracts/GatekeeperTwoAttack.sol": {
+			"keccak256": "0xd1c136e65e9aed5a9081410c8d33751290da41ad6677abfba0f2e9586679cdb7",
+			"urls": [
+				"bzz-raw://895371db39d0d1003b5d98aeceb4648291c967e28a68bf25be5173d149147866",
+				"dweb:/ipfs/QmNUZaGJUWdy6tUCxQTUfr85kqBqAwoYBJ6xPzRrCLF2Nr"
+			]
+		}
+	},
+	"version": 1
+}

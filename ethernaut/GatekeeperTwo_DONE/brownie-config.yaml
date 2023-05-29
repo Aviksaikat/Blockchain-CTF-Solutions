@@ -1,0 +1,15 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@3.0.0
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@3.0.0"
+dotenv: .env
+networks:
+  default: mainnet-fork
+  rinkeby:
+    verify: False
+  goerli:
+    varify: False
+wallets:
+  from_key: ${PRIVATE_KEY}

@@ -1,0 +1,16 @@
+dependencies:
+  - OpenZeppelin/openzeppelin-contracts@4.8.0
+compiler:
+  solc:
+    remappings:
+      - "@openzeppelin=OpenZeppelin/openzeppelin-contracts@4.8.0"
+dotenv: .env
+networks:
+  default: sepolia-fork-local
+  sepolia-fork-local:
+    cmd_settings:
+      fork: $sepoliafork
+  sepolia:
+    verify: False
+wallets:
+  from_key: ${PRIVATE_KEY}
