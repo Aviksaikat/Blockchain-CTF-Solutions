@@ -1,0 +1,6 @@
+networks:
+  default: mainnet-fork
+  local:
+    verify: False
+wallets:
+  from_key: ${PRIVATE_KEY}

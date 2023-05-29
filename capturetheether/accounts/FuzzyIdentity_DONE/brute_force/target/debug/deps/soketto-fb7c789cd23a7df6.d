@@ -1,0 +1,16 @@
+/home/avik/Desktop/practice/web3/CTFS/captureTheEther/accounts/FuzzyIdentity/brute_force/target/debug/deps/soketto-fb7c789cd23a7df6.rmeta: /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/lib.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/base.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/connection.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/data.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/extension.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake/client.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake/server.rs
+
+/home/avik/Desktop/practice/web3/CTFS/captureTheEther/accounts/FuzzyIdentity/brute_force/target/debug/deps/libsoketto-fb7c789cd23a7df6.rlib: /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/lib.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/base.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/connection.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/data.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/extension.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake/client.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake/server.rs
+
+/home/avik/Desktop/practice/web3/CTFS/captureTheEther/accounts/FuzzyIdentity/brute_force/target/debug/deps/soketto-fb7c789cd23a7df6.d: /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/lib.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/base.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/connection.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/data.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/extension.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake/client.rs /home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake/server.rs
+
+/home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/lib.rs:
+/home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/base.rs:
+/home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/connection.rs:
+/home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/data.rs:
+/home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/extension.rs:
+/home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake.rs:
+/home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake/client.rs:
+/home/avik/.cargo/registry/src/github.com-1ecc6299db9ec823/soketto-0.7.1/src/handshake/server.rs:
+
+# env-dep:CARGO_PKG_VERSION=0.7.1
