@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-from brownie import NaughtCoin, AttackNaughtCoin
-from scripts.deploy import deploy
-from scripts.helpful_scripts import get_account, convert
+from brownie import AttackNaughtCoin, NaughtCoin
 from colorama import Fore
+from scripts.deploy import deploy
+from scripts.helpful_scripts import convert, get_account
 
 # * colours
 green = Fore.GREEN

@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 import rlp
 from brownie import Recovery, SimpleToken
+from eth_utils import keccak, to_bytes, to_checksum_address
 from scripts.helpful_scripts import get_account
-from eth_utils import keccak, to_checksum_address, to_bytes
 
 
 def mk_contract_address(sender: str, nonce: int) -> str:

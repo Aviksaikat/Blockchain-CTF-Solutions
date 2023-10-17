@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 from brownie import interface, web3
 from brownie.convert import to_uint
-from scripts.helpful_scripts import get_account
 from colorama import Fore
+from scripts.helpful_scripts import get_account
 
 # sepolia: 0x783AD551E9f387d6B470eE0584CD9dE1963a4e12
 # * colours

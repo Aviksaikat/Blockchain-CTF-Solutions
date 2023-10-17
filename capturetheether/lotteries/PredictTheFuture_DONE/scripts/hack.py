@@ -1,9 +1,10 @@
 #!/usr/bin/python3
-from brownie import web3, Attack
+from time import time
+
+from brownie import Attack, web3
+from colorama import Fore
 from scripts.deploy import deploy
 from scripts.helpful_scripts import get_account
-from colorama import Fore
-from time import time
 
 # * colours
 green = Fore.GREEN

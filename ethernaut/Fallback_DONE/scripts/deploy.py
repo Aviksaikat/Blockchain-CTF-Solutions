@@ -7,7 +7,7 @@ def deploy():
     owner, _ = get_account()
 
     fallback = Fallback.deploy({"from": owner})
-    
+
     print(f"Contract Deployed to {fallback.address}")
     return fallback, owner
 

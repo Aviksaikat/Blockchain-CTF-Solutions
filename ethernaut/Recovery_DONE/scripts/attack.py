@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-from brownie import Recovery, SimpleToken, web3, convert
-from scripts.deploy import deploy, mk_contract_address
-from scripts.helpful_scripts import get_account, convert
+from brownie import Recovery, SimpleToken, convert, web3
 from colorama import Fore
+from scripts.deploy import deploy, mk_contract_address
+from scripts.helpful_scripts import convert, get_account
 
 # * colours
 green = Fore.GREEN

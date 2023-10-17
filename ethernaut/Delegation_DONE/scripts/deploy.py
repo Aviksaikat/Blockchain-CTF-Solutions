@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 from brownie import Delegate, Delegation
-from scripts.helpful_scripts import get_account
 from colorama import Fore
+from scripts.helpful_scripts import get_account
 
 # * colours
 green = Fore.GREEN

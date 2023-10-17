@@ -1,14 +1,12 @@
 #!/usr/bin/python3
 from brownie import web3
+from colorama import Fore
+from eth_account._utils.legacy_transactions import \
+    serializable_unsigned_transaction_from_dict
+from eth_account._utils.signing import to_standard_v
+from eth_keys.datatypes import Signature
 from scripts.deploy import deploy
 from scripts.helpful_scripts import get_account
-from colorama import Fore
-
-from eth_account._utils.signing import to_standard_v
-from eth_account._utils.legacy_transactions import (
-    serializable_unsigned_transaction_from_dict,
-)
-from eth_keys.datatypes import Signature
 
 # * colours
 green = Fore.GREEN

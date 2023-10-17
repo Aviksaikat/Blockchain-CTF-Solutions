@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-from brownie import AlienCodex, web3, convert
-from scripts.deploy import deploy
-from scripts.helpful_scripts import get_account
+from brownie import AlienCodex, convert, web3
 from colorama import Fore
 from eth_utils import keccak
+from scripts.deploy import deploy
+from scripts.helpful_scripts import get_account
 
 # * colours
 green = Fore.GREEN

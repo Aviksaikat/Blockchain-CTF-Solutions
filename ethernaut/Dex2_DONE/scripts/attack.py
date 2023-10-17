@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 from brownie import DexTwo, JaduToken
+from colorama import Fore
 from scripts.deploy import deploy
 from scripts.helpful_scripts import get_account
-from colorama import Fore
 
 # sepolia: 0x6D17f61128b257Cb26cF4B967a15B1cC7e406E5F
 # * colours

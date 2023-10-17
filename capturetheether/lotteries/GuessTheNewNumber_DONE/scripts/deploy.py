@@ -1,8 +1,8 @@
 #!/usr/bin/python3
-from brownie import GuessTheNewNumberChallenge
-from scripts.helpful_scripts import get_account
 from random import randint
 
+from brownie import GuessTheNewNumberChallenge
+from scripts.helpful_scripts import get_account
 
 ZERO_ADDRESS = "0x0000000000000000000000000000000000000000"
 

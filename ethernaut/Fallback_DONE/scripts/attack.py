@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 from brownie import interface
-from web3 import Web3
 from colorama import Fore
 from scripts.deploy import deploy
 from scripts.helpful_scripts import get_account
+from web3 import Web3
 
 # ? Global variables
 AMOUNT = 0.00002

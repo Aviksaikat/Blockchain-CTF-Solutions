@@ -1,11 +1,12 @@
 #!/usr/bin/python3
-from brownie import Attack, accounts, web3
-from scripts.deploy import deploy
-from scripts.helpful_scripts import get_account
-from colorama import Fore
-import rlp
 import os
 import random
+
+import rlp
+from brownie import Attack, accounts, web3
+from colorama import Fore
+from scripts.deploy import deploy
+from scripts.helpful_scripts import get_account
 
 # * colours
 green = Fore.GREEN
